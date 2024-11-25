@@ -25,5 +25,11 @@ h1{
 }
 
 .subtitulo {
-    padding-top: 2rem;
+    padding-top: 5rem;
 }
+hr{width: 40%;
+   height:3px;
+   background-color: #000080;
+   border: none;
+    margin: 10px auto;
+    }
