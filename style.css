@@ -1,0 +1,29 @@
+.navbar-nav {
+    display: flex;
+    justify-content: center;  /* Centraliza os itens de navegação */
+    flex-grow: 1;
+    gap: 15px;  /* Menor espaçamento entre os itens */
+    align-items: center; 
+    background-color: ; 
+    
+}
+#logo{
+    margin-left: 850px;
+    width: 150px;
+    height: auto;
+}
+.navbar{
+    background-color: #FFFFFF;
+    
+}
+.img-fluid{
+    width:2000px ;
+    height: 600px;
+}
+h1{
+    text-align: center;
+}
+
+.subtitulo {
+    padding-top: 2rem;
+}
