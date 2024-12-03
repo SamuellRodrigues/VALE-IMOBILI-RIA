@@ -16,12 +16,12 @@
 
   <header>
     <hr><!-- Linha horizontal -->
-    <div class="container">
+    <div class="container-fluid">
       <nav class="navbar navbar-expand-lg ">
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <a class="navbar-brand"
-              href="file:///C:/Users/Alunos/Desktop/Samuel%20rodrigues/VALE-IMOBILIARIA/index.html#"></a>
+              href="file:///C:/Users/Alunos/Desktop/Samuel%20rodrigues/VALE-IMOBILIARIA/index.html?#"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
               data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
               aria-label="Toggle navigation">
@@ -41,13 +41,12 @@
                 aria-expanded="false">
                 Informações
               </a>
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="file:///C:/Users/Alunos/Documents/Informatica%20Tarde/Samuel%20Rodrigues/VALE-IMOBILIARIA/quem%20somos.html">Quem somos</a></li>
-              
-           
-            </ul>
-          </li>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="file:///C:/Users/Alunos/Documents/Informatica%20Tarde/Samuel%20Rodrigues/VALE-IMOBILIARIA/quem%20somos.html">Quem somos</a></li>
+                
+             
+              </ul>
+            </li>
             <li class="nav-item">
               <a class="nav-link" href="file:///C:/Users/Alunos/Documents/Informatica%20Tarde/Samuel%20Rodrigues/VALE-IMOBILIARIA/Contato.html">Contato</a>
             </li>
@@ -55,76 +54,129 @@
         </div>
       </nav>
   </header>
-  <main>
-    <img src="img/Principal3.jpg" class="img-fluid1" alt="...">
-    <h1 class="text subtitulo">Imóveis Disponiveis a Compra</h1>
-      <hr class="linha">
-  
-      <div class="container">
-        <div class="row">
-  
-          <!-- Início do Card 01 -->
-       <div class="col-xl-4 col-lg-4 g-5 col-sm-6">
-        <div class="card " style="width: 18rem;">
-          <img src="img/Apartamento com 2 quantos no bairro vila celeste- ipatinga.jpg" alt="Imóvel" class="card-image">
-          <div class="card-content">
-            <h2 class="card-title">VLIA CELESTE</h2>
-            <p class="card-location">Apartamento com 2 quartos no bairro Vila Celeste - Ipatinga</p>
-            <p class="card-description">Ref: 2692   Área: 450.00m²</p>
-            <div class="card-footer">
-              <span class="card-price">R$ 210.000,00</span>
-              <a href="file:///C:/Users/Alunos/Documents/Informatica%20Tarde/Samuel%20Rodrigues/VALE-IMOBILIARIA/VILA%20CELESTE.html" class="card-link">Mais detalhes</a>
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        color: #333;
+        line-height: 1.6;
+    }
+    .form-container {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    .form-title {
+        font-size: 24px;
+        color: #7c0c0c; /* Vermelho escuro */
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    .divider {
+        border: 0;
+        border-top: 2px solid #7c0c0c; /* Linha vermelha */
+        margin-bottom: 20px;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .form-group {
+        display: flex;
+        gap: 20px;
+    }
+    .form-group div {
+        flex: 1;
+    }
+    label {
+        font-weight: bold;
+        display: block;
+        margin-bottom: 5px;
+    }
+    input, select, textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 14px;
+    }
+    textarea {
+        resize: none;
+        height: 100px;
+    }
+    .captcha {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .captcha span {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #f5f5f5;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-weight: bold;
+    }
+    button {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 4px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: #0056b3;
+    }
+</style>
+</head>
+<body>
+<div class="form-container">
+    <div class="form-title">FORMULÁRIO DE CONTATO</div>
+    <hr class="divider">
+    <form>
+        <div class="form-group">
+            <div>
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" placeholder="Informe o Seu Nome Completo">
             </div>
-          </div>
+            <div>
+                <label for="email">E-Mail</label>
+                <input type="email" id="email" name="email" placeholder="Informe o Seu E-Mail Completo">
+            </div>
         </div>
-      </div>
-      <!-- Fim do Card 01 -->
-  
-          <!-- Início do Card 02 -->
-          <div class="col-xl-4 col-lg-4 g-5 col-sm-6">
-            <div class="card " style="width: 18rem;">
-              <img src="img/VENEZA.jpg" alt="Imóvel" class="card-image">
-              <div class="card-content">
-                <h2 class="card-title">VENEZA</h2>
-                <p class="card-location">Casa com 3 quartos no bairro Veneza - Ipatinga</p>
-                <p class="card-description">Ref: 2208
-                  Área: 160.00m²</p>
-                <div class="card-footer">
-                  <span class="card-price">R$ 730.000,00</span>
-                  <a href="file:///C:/Users/Alunos/Documents/Informatica%20Tarde/Samuel%20Rodrigues/VALE-IMOBILIARIA/VENEZA.html" class="card-link">Mais detalhes</a>
-                </div>
-              </div>
+        <div class="form-group">
+            <div>
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="Informe Seu Telefone">
             </div>
-          </div>
-          <!-- Fim do Card 02 -->
-  
-          <!-- Início do Card 03 -->
-          <div class="col-xl-4 col-lg-4 g-5 col-sm-6">
-            <div class="card " style="width: 18rem;">
-              <img src="das águas/principal.jpg" alt="Imóvel" class="card-image">
-              <div class="card-content">
-                <h2 class="card-title">Das Águas</h2>
-                <p class="card-location">Casa com 3 quartos no Bairro das Águas - Ipatinga</p>
-                <p class="card-description">Ref: 2763
-                  Área: 260.00m²
-                  </p>
-                <div class="card-footer">
-                  <span class="card-price">R$ 1.680.000,00</span>
-                  <a href="file:///C:/Users/Alunos/Documents/Informatica%20Tarde/Samuel%20Rodrigues/VALE-IMOBILIARIA/das%20%C3%A1guas.html" class="card-link">Mais detalhes</a>
-                </div>
-              </div>
+            <div>
+                <label for="preferencia">Preferência do Retorno</label>
+                <select id="preferencia" name="preferencia">
+                    <option>Solicitar Retorno Via E-mail</option>
+                    <option>Solicitar Retorno Via Telefone</option>
+                </select>
             </div>
-          </div>
-          <!-- Fim do Card 03 -->
-  
         </div>
-      </div>
-
-      
-
-      
-</main>
-    <footer> <style>
+        <div>
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem">Olá, estive visitando seu website e gostaria de receber um contato.</textarea>
+        </div>
+        <div>
+            <label for="captcha">Digite o código de confirmação:</label>
+            <div class="captcha">
+                <span>G5F3J</span>
+                <input type="text" id="captcha" name="captcha" placeholder="">
+            </div>
+        </div>
+        <button type="submit">📩 Enviar Formulário</button>
+    </form>
+</div>
+</body>
+</html>
+<footer>
+    <style>
       body {
         font-family: Arial, sans-serif;
         margin: 0;
@@ -238,10 +290,11 @@
           <button type="submit">Enviar</button>
         </form>
       </div>
-    </div></footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"></script>
-  </body>
-  
-  </html>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
